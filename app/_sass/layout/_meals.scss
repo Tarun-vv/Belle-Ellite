@@ -2,17 +2,53 @@
   padding: 4.8rem 0 9.6rem 0;
 }
 
-.meals__card {
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+.card {
+  // height: 52rem;
+  perspective: 150rem;
 
-  &-img-box {
+  &__text-box {
+    padding: 1.6rem 1.6rem 2.4rem 1.6rem;
   }
-  &-img {
+
+  &__img {
     width: 100%;
     height: 24rem;
-    margin-bottom: 2.4rem;
   }
-  &-text-box {
-    padding: 1.6rem 1.6rem 2.4rem 1.6rem;
+
+  &--front {
+    // height: 52rem;
+    // background-color: red;
+    transition: all 0.8s;
+    position: relative;
+    box-shadow: 0 1rem 2rem rgba(#000, 0.2);
+  }
+  &--back {
+    height: 100%;
+    background-color: #fff;
+    transform: rotateY(180deg);
+    transition: all 0.8s;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+
+    &-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+
+
+  &:hover &--front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &--back {
+    transform: rotateY(0);
   }
 }
