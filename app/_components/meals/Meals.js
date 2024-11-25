@@ -17,6 +17,10 @@ function Meals() {
       <div className="container">
         <MealsCard />
       </div>
+
+      <div className="container">
+        
+      </div>
     </section>
   );
 }

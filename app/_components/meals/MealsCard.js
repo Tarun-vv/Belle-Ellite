@@ -1,8 +1,7 @@
-import Link from "next/link";
-
-import Image from "next/image";
 import meal1 from "@/public/meals/meals-image-1.jpeg";
 import meal2 from "@/public/meals/meals-image-2.jpeg";
+import meal3 from "@/public/meals/meals-image-3.jpg";
+import CardItem from "./CardItem";
 
 const mealData = [
   {
@@ -48,44 +47,43 @@ const mealData = [
       },
       {
         id: 4,
-        item: "🌶️ Balanced authentic spices",
+        item: "🧂 Low sodium, zinc and gluten-free",
       },
     ],
     mealCost: 40,
+  },
+  {
+    id: 3,
+    mealUrl: meal3,
+    mealName: "Beef Wellington",
+    mealList: [
+      {
+        id: 1,
+        item: "🌱 No artificial additives",
+      },
+      {
+        id: 2,
+        item: "🍯 Less than 10g sugar",
+      },
+      {
+        id: 3,
+        item: "🥩 Prime beef and mushroom filling",
+      },
+      {
+        id: 4,
+        item: "🍽️ Classic recipe, expertly crafted",
+      },
+    ],
+    mealCost: 37,
   },
 ];
 
 function MealsCard() {
   return (
     <div className="grid grid--3--cols gap-sm">
-      <div className="card">
-        <div className="card--front">
-          <div className="card__img-box">
-            <Image src={meal1} alt="meal image" className="card__img" />
-          </div>
-          <div className="card__text-box">
-            <h3 className="heading-3">Truffle Risotto</h3>
-            <ul className="paragraph-list">
-              <li>🥗 340 calories per serving</li>
-              <li>🍄 Infused with black truffle</li>
-              <li>🧀 Topped with aged Parmesan</li>
-              <li>🌿 Made with organic ingredients</li>
-            </ul>
-          </div>
-        </div>
-        <div className="card--back">
-          <div className="card--back-text">
-            <h3 className="heading-3">Order now</h3>
-            <p className="text-md">Only</p>
-            <p className="text-lg u-margin-bottom-md">$35</p>
-            <Link className="btn" href="#">
-              Order now
-            </Link>
-          </div>
-        </div>
-      </div>
-
-      <h1>Card 1</h1>
+      {mealData.map((meal) => (
+        <CardItem meal={meal} key={meal.id} />
+      ))}
     </div>
   );
 }
