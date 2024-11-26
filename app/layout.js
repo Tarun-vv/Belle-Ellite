@@ -1,4 +1,5 @@
 // importing style.css
+import NavBar from "./_components/Navigation/NavBar";
 import "./_sass/main.css";
 
 // importing Josefin Sans font
@@ -11,7 +12,10 @@ const josefin = Josefin_Sans({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${josefin.className}`}>{children}</body>
+      <body className={`${josefin.className}`}>
+        <NavBar />
+        {children}
+      </body>
     </html>
   );
 }
