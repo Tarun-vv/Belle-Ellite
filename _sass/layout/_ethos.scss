@@ -1,0 +1,18 @@
+.section-ethos {
+  padding: 9.6rem 0;
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color-primary-light-3),
+    var(--color-primary-dark-3)
+  );
+}
+
+.etho {
+  &__icon {
+    font-size: 6rem;
+    color: var(--color-primary-dark-2);
+  }
+  // &__item:not(:last-child) {
+  //   border-right: 2px solid var(--color-primary-dark-2);
+  // }
+}
