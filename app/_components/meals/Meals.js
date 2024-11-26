@@ -1,4 +1,6 @@
 import MealsCard from "./MealsCard";
+import MealsImgBox from "./MealsImgBox";
+import MealsTextBox from "./MealsTextBox";
 
 function Meals() {
   return (
@@ -14,12 +16,13 @@ function Meals() {
         </p>
       </div>
 
-      <div className="container">
+      <div className="container ">
         <MealsCard />
       </div>
 
-      <div className="container">
-        
+      <div className="container grid grid--2--cols gap-md u-margin-top-lg ">
+        <MealsImgBox />
+        <MealsTextBox />
       </div>
     </section>
   );

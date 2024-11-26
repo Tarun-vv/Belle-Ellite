@@ -5,7 +5,10 @@
   --color-primary: #eab308;
   --color-primary-light-1: rgb(254, 240, 138, 0.7);
   --color-primary-light-2: #facc15;
+  --color-primary-light-3: rgb(254, 240, 138, 0.5);
   --color-primary-dark: rgb(253, 224, 71, 0.7);
+  --color-primary-dark-2: #FACC15;
+  --color-primary-dark-3: rgb(253, 224, 71, 0.5);
 }
 
 // GLOBAL CLASSES
@@ -78,6 +81,11 @@ html {
     display: inline-block;
     margin-bottom: 3.6rem;
   }
+
+  &-4 {
+    font-size: 2.6rem;
+    font-weight: 500;
+  }
 }
 
 .btn {
@@ -126,4 +134,13 @@ html {
 
 .text-lg {
   font-size: 5.6rem;
+}
+
+.flex-h {
+  display: flex;
+  gap: 3.6rem;
+}
+
+.text-center {
+  text-align: center;
 }
