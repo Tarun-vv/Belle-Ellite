@@ -6,6 +6,8 @@ import AboutUs from "./_components/about-us/AboutUs";
 import Meals from "./_components/meals/Meals";
 import Ethos from "./_components/ethos/Ethos";
 import Testimonial from "./_components/testimonials/Testimonial";
+import Form from "./_components/form/Form";
+import Footer from "./_components/footer/Footer";
 
 function page() {
   return (
@@ -15,6 +17,8 @@ function page() {
       <Meals />
       <Ethos />
       <Testimonial />
+      <Form />
+      <Footer />
     </>
   );
 }

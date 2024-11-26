@@ -7,7 +7,7 @@
   --color-primary-light-2: #facc15;
   --color-primary-light-3: rgb(254, 240, 138, 0.5);
   --color-primary-dark: rgb(253, 224, 71, 0.7);
-  --color-primary-dark-2: #FACC15;
+  --color-primary-dark-2: #facc15;
   --color-primary-dark-3: rgb(253, 224, 71, 0.5);
 }
 
@@ -48,6 +48,10 @@ html {
 
 .grid--3--cols {
   grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4--cols {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .gap-sm {
@@ -143,4 +147,8 @@ html {
 
 .text-center {
   text-align: center;
+}
+
+.gold {
+  color: #ca8a04;
 }
