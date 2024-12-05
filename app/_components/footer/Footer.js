@@ -4,7 +4,7 @@ import { IoLogoTwitter } from "react-icons/io5";
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer u-margin-top-lg">
       <div className="container">
         <div className="footer__list grid grid--3--cols gap-md">
           <div className="footer__list-col">

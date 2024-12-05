@@ -62,6 +62,14 @@ html {
   gap: 4.8rem;
 }
 
+.row-gap-md {
+  row-gap: 3rem;
+}
+
+.row-gap-lg {
+  row-gap: 4.8rem;
+}
+
 .heading {
   &-1 {
     font-size: 4.8rem;
@@ -93,6 +101,7 @@ html {
 }
 
 .btn {
+  &,
   &:link,
   &:visited {
     display: inline-block;
@@ -102,6 +111,8 @@ html {
     padding: 1.5rem 3rem;
     background-color: var(--color-primary);
     transition: all 0.2s;
+    border: none;
+    font-family: inherit;
   }
 
   &:hover,
@@ -153,4 +164,39 @@ html {
   color: #ca8a04;
 }
 
-// NAVIGATION
+.font-sm {
+  font-size: 2rem !important;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+.relative {
+  position: relative;
+}
+
+.flex-1 {
+  display: flex;
+  flex: 1;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+}
+
+.error {
+  color: red;
+  font-size: 1.8rem;
+}
+
+// FAQ
+.section-faqs {
+  padding: 4.8rem 0;
+}
+
+.u-margin-top-lg {
+  margin-top: 4.9rem;
+}

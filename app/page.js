@@ -8,6 +8,9 @@ import Ethos from "./_components/ethos/Ethos";
 import Testimonial from "./_components/testimonials/Testimonial";
 import Form from "./_components/form/Form";
 import Footer from "./_components/footer/Footer";
+import Login from "./_components/Login";
+import SignOut from "./_components/Navigation/SignOut";
+import FAQS from "./_components/FAQS";
 
 function page() {
   return (
@@ -18,7 +21,9 @@ function page() {
       <Ethos />
       <Testimonial />
       <Form />
+      <FAQS />
       <Footer />
+      <SignOut />
     </>
   );
 }

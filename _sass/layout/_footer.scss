@@ -1,0 +1,41 @@
+.footer {
+  background-color: #292524;
+  padding: 9.6rem 0;
+
+  &__icon-container {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__icon {
+    height: 4rem;
+    width: 4rem;
+    color: #ca8a04;
+  }
+
+  &__list {
+    &-main {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1.8rem;
+
+      li {
+        font-size: 1.6rem;
+        color: #fff;
+      }
+    }
+
+    &-heading {
+      font-size: 2.4rem;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 2.2rem;
+    }
+  }
+}
+
+.copyright {
+  color: #fff;
+  font-size: 2rem;
+}

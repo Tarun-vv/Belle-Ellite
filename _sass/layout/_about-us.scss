@@ -1,0 +1,23 @@
+.section-about {
+  padding: 9.6rem 0;
+}
+
+.about {
+  &__text-box {
+    align-self: center;
+  }
+
+  &__img {
+    width: 100%;
+    display: block;
+    transition: all 0.2s;
+  }
+
+  &__img:hover {
+    transform: scale(1.15);
+  }
+
+  &__img-container {
+    overflow: hidden;
+  }
+}

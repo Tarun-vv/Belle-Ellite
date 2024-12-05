@@ -1,0 +1,24 @@
+.section-tables {
+  padding: 9.6rem 0;
+}
+
+.table {
+  padding: 1.6em;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+  &__price-box {
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+  }
+}
+
+.section-table-main {
+  padding: 9.6rem 0;
+}
+
+.table-main {
+  &__img {
+    // width: 100%;
+  }
+}

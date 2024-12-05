@@ -59,6 +59,14 @@ html {
   gap: 4.8rem;
 }
 
+.row-gap-md {
+  row-gap: 3rem;
+}
+
+.row-gap-lg {
+  row-gap: 4.8rem;
+}
+
 .heading-1 {
   font-size: 4.8rem;
   font-weight: 600;
@@ -87,7 +95,7 @@ html {
   font-weight: 500;
 }
 
-.btn:link, .btn:visited {
+.btn, .btn:link, .btn:visited {
   display: inline-block;
   text-decoration: none;
   color: #525252;
@@ -95,6 +103,8 @@ html {
   padding: 1.5rem 3rem;
   background-color: var(--color-primary);
   transition: all 0.2s;
+  border: none;
+  font-family: inherit;
 }
 .btn:hover, .btn:active {
   background-color: var(--color-primary-light-2);
@@ -140,6 +150,35 @@ html {
 
 .gold {
   color: #ca8a04;
+}
+
+.font-sm {
+  font-size: 2rem !important;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.relative {
+  position: relative;
+}
+
+.flex-1 {
+  display: flex;
+  flex: 1;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+}
+
+.error {
+  color: red;
+  font-size: 1.8rem;
 }
 
 .u-margin-bottom-sm {
@@ -441,4 +480,23 @@ html {
 .nav__list-item:hover {
   background-position: 100%;
   color: #fff;
+}
+
+.section-tables {
+  padding: 9.6rem 0;
+}
+
+.table {
+  padding: 1.6em;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+}
+.table__price-box {
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.section-table-main {
+  padding: 9.6rem 0;
 }/*# sourceMappingURL=main.css.map */
